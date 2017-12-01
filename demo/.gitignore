@@ -1,2 +1,7 @@
-dist/*.js
 node_modules
+dist/*.js
+dist/*.woff2
+dist/*.svg
+dist/*.ttf
+dist/*.eot
+dist/*.woff

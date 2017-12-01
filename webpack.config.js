@@ -1,4 +1,5 @@
 var path = require('path');
+var rules = require('./webpack/rules');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -12,19 +13,6 @@ module.exports = {
     libraryTarget: 'umd'
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" }
-        ]
-      }
-    ]
+    rules: rules
   }
 }

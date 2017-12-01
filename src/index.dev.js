@@ -1,5 +1,5 @@
 import render from './app';
-import './index.css';
+import './index.scss';
 
 render();
 

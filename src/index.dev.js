@@ -1,4 +1,5 @@
 import render from './app';
+import './index.css';
 
 render();
 

@@ -2,7 +2,6 @@ var path = require('path');
 var rules = require('./webpack/rules');
 
 module.exports = {
-  devtool: 'inline-source-map',
   entry: [
     './src/index.js'
   ],
@@ -14,5 +13,6 @@ module.exports = {
   },
   module: {
     rules: rules
-  }
+  },
+  devtool: 'inline-source-map'
 }

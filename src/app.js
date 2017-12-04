@@ -6,6 +6,7 @@ import { Clock } from './study/clock';
 import { ComposingComponents } from './study/composing-components';
 import { LoginControl } from './study/element-variables';
 import { Page } from './study/preventing-component-from-rendering';
+import { WelcomeDialog } from './study/my';
 
 class Element extends React.Component {
   render() {
@@ -17,7 +18,8 @@ class Element extends React.Component {
       Clock,
       ComposingComponents,
       LoginControl,
-      Page
+      Page,
+      WelcomeDialog
     ];
 
     const inner = rows.map((Value, index) => {

@@ -28,14 +28,6 @@ class LoginControl extends React.Component {
     };
   }
 
-  handleLoginClick() {
-    this.setState({ isLoggedIn: true });
-  }
-
-  handleLogoutClick() {
-    this.setState({ isLoggedIn: false });
-  }
-
   render() {
     const isLoggedIn = this.state.isLoggedIn;
 
@@ -52,6 +44,15 @@ class LoginControl extends React.Component {
       </div>
     );
   }
+
+  handleLoginClick() {
+    this.setState({ isLoggedIn: true });
+  }
+
+  handleLogoutClick() {
+    this.setState({ isLoggedIn: false });
+  }
+
 }
 
 export { LoginControl };

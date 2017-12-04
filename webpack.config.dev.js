@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var rules = require('./webpack/rules');
+var config = require('./webpack/config');
 
 module.exports = {
   entry: [
@@ -15,10 +15,11 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    config.extractSass
   ],
   module: {
-    rules: rules
+    rules: config.rules
   },
   devtool: 'inline-source-map'
 }

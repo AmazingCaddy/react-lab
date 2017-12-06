@@ -6,7 +6,7 @@ import { Clock } from './study/clock';
 import { ComposingComponents } from './study/composing-components';
 import { LoginControl } from './study/element-variables';
 import { Page } from './study/preventing-component-from-rendering';
-import { WelcomeDialog } from './study/my';
+import { WelcomeDialog } from './study/welcome';
 
 class Element extends React.Component {
   render() {

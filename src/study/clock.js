@@ -9,8 +9,8 @@ class Clock extends React.Component {
   render() {
     return (
       <div className={this.props.className}>
-        <h1>Current Time</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <h3>Current Time</h3>
+        <h3>It is {this.state.date.toLocaleTimeString()}.</h3>
       </div>
     );
   }

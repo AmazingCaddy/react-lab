@@ -7,7 +7,7 @@ class HelloWorld extends React.Component {
     return (
       <div className={className}>
         <div>hello world - by class</div>
-        <h1>Hello, World!</h1>
+        <h3>Hello, World!</h3>
       </div>
     );
   }
@@ -18,7 +18,7 @@ function HelloWorldFunc(props) {
   return (
     <div className={className}>
       <div>hello world - by function</div>
-      <h1>Hello, World!</h1>
+      <h3>Hello, World!</h3>
     </div>
   );
 }

@@ -29,7 +29,7 @@ class Page extends React.Component {
     return (
       <div className={this.props.className}>
         <WarningBanner warn={this.state.showWarning} />
-        <button onClick={this.handleToggleClick}>
+        <button onClick={this.handleToggleClick} className={'btn btn-primary'}>
           {this.state.showWarning ? 'Hide' : 'Show'}
         </button>
       </div>

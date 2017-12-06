@@ -1,7 +1,10 @@
-import render from './app';
+import Render from './app';
+import days from './30days';
+
 import './index.scss';
 
-render();
+Render();
+days();
 
 if (module.hot) {
   module.hot.accept();
